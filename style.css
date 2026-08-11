@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
@@ -7,11 +7,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
-    color: #222222; 
+    color: #222222;
     line-height: 1.6;
 }
 
-a:focus, button:focus, input:focus, textarea:focus {
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
     outline: 3px solid #0056b3;
     outline-offset: 2px;
 }
@@ -52,7 +55,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -64,11 +67,11 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: #3498db;
+    color: #ffffff;
 }
 
 main {
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -78,12 +81,12 @@ section {
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #projects {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -98,8 +101,9 @@ article {
     #projects {
         grid-template-columns: 1fr 1fr;
     }
+
     #projects h2 {
-        grid-column: 1 / -1; 
+        grid-column: 1 / -1;
     }
 }
 
@@ -114,7 +118,8 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -124,7 +129,7 @@ input, textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #0056b3;
     color: white;
     border: none;
     border-radius: 4px;
@@ -134,7 +139,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #003f7f;
 }
 
 footer {
@@ -148,9 +153,9 @@ footer h2 {
 }
 
 footer a {
-    color: #3498db;
+    color: #ffffff;
 }
 
 footer a:hover {
-    color: #ffffff;
+    color: #dddddd;
 }
