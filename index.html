@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Elena Durán Begliomini</h1>
+        <p>Computer Science Engineering Student | Admission Year: 2024</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <blockquote cite="https://en.wikipedia.org/wiki/Computer_science">
+                "Computer science is no more about computers than astronomy is about telescopes."
+            </blockquote>
+            <p>My name is Elena, I am a third-year Computer Science Engineering student. My main interests and what I would like to go into after graduating, are cybersecurity and the development and mechanics of artificial intelligence.</p>
+            
+            <h3>My Skills</h3>
+            <ul>
+                <li>C & C++</li>
+                <li>Python & R</li>
+                <li>SQL (Databases)</li>
+                <li>Arduino</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Work</h2>
+            
+            <article>
+                <h3>Web Technologies Portfolio</h3>
+                <p>A personal web page built from scratch using semantic HTML and CSS, without relying on templates or frameworks. This project focuses on web accessibility, and layout techniques like CSS Grid and Flexbox.</p>
+            </article>
+
+            <article>
+                <h3>First-Year Hovercraft Project</h3>
+                <p>During my first year, I worked with a team of students to design and build a functional hovercraft. We handled both the electrical components and the logic, coding the control system using Arduino. This project helped me develop strong teamwork, problem-solving, and practical engineering skills.</p>
+        
+                <figure>
+                    <img src="hovercraft.jpg" alt="Four functional hovercrafts built by four different teams of engineering students">
+                    <figcaption>The hovercraft my team and I built (the red one) next to three other designs.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/">External Site: MDN Web Docs</a></li>
+            <li><a href="https://github.com/eduranbegliomini">My GitHub Profile</a></li>
+            <li><a href="https://github.com/eduranbegliomini/webtech-lab-01">This Project's Repository</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
