@@ -202,6 +202,62 @@ textarea[aria-invalid="true"] {
     border: 2px solid #d32f2f;
 }
 
+.controls,
+#add-resource-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+body.dark-mode .controls,
+body.dark-mode #add-resource-form {
+    background-color: #333340;
+    border-color: #444;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.controls label {
+    font-weight: bold;
+    margin-right: -5px; 
+}
+
+.controls select,
+.controls input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+#add-resource-form h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#add-resource-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (min-width: 768px) {
+    #add-resource-form {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1fr auto;
+        align-items: end; 
+    }
+}
+
 #resource-list {
     list-style: none;
     padding: 0;
@@ -209,24 +265,41 @@ textarea[aria-invalid="true"] {
 }
 
 .resource-item {
-    background-color: #fafafa;
+    background-color: #ffffff;
     border: 1px solid #ddd;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.resource-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 body.dark-mode .resource-item {
-    background-color: #333;
+    background-color: #2b2b36;
     border-color: #555;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .resource-item:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.resource-item span {
+    font-size: 1.05rem;
 }
 
 .resource-item button {
     background-color: #d32f2f;
-    padding: 5px 10px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
 }
 
 .resource-item button:hover {
