@@ -244,18 +244,28 @@ body.dark-mode #add-resource-form {
     padding-bottom: 5px;
 }
 
+#add-resource-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #add-resource-form input,
 #add-resource-form select {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
     #add-resource-form {
         display: grid;
-        grid-template-columns: 3fr 1.5fr 1fr auto; 
-        gap: 15px;
+        grid-template-columns: 2.5fr minmax(220px, 1.2fr) 110px auto;
+        gap: 20px;
         align-items: end;
     }
 }
