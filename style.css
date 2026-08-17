@@ -244,17 +244,19 @@ body.dark-mode #add-resource-form {
     padding-bottom: 5px;
 }
 
-#add-resource-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+#add-resource-form input,
+#add-resource-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
 }
 
 @media (min-width: 768px) {
     #add-resource-form {
         display: grid;
-        grid-template-columns: 1.5fr 1.5fr 1fr auto;
-        align-items: end; 
+        grid-template-columns: 3fr 1.5fr 1fr auto; 
+        gap: 15px;
+        align-items: end;
     }
 }
 
