@@ -121,6 +121,19 @@
                 <p id="form-success" style="display: none; color: green; font-weight: bold;"></p>
             </form>
         </section>
+        
+        <section id="services-section">
+            <h2>Our Price List</h2>
+            <div id="api-status">Loading services...</div>
+            <ul id="services-list"></ul>
+
+            <h3>Check a Service by ID</h3>
+            <input type="number" id="service-id-input" placeholder="Service ID">
+            <button id="fetch-service-btn">Search</button>
+            <div id="single-service-result"></div>
+        </section>
+
+        <script src="api.js"></script>
     </main>
 
     <footer>
